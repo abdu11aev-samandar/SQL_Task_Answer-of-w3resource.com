@@ -1,0 +1,4 @@
+SELECT emp_fname, emp_lname, dpt_name, dpt_allotment
+from emp_details a
+         left join emp_department b
+                   on a.emp_dept = b.dpt_code
